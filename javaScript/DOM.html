@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .container{
+            border: 2px solid red ;
+            margin: 0 3px;
+            background-color: cyan;
+          }
+        </style>
+    </head>
+    <Body>
+        <div id="firstContainer" class="container"><h1>Welcome is This JavaScript</h1>
+            <br>
+        <button id="click">Click me</button>
+        <br>
+        <p>This is paragraph</p>
+        </div>
+        <h1></h1>
+
+    </Body>
+    <script>
+     let elem =document.getElementById('click');
+     console.log(elem);
+
+     let elemClass = document.getElementsByClassName("container");
+     console.log(elemClass);
+     //elemClass[0].style.background ="yellow";
+     elemClass[0].classList.add("bg-primary");
+     elemClass[0].classList.add("text-success");
+
+    </script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// const person = {
+//   firstName : "John",
+//   lastName  : "Doe",
+//   age     : 50,
+//   eyeColor  : "blue"
+// };
+
+// document.getElementById("demo").innerHTML =
+// person.firstName + " is " + person.age + " years old.";
+// let text="";
+// for(let x in person){
+
+//   text=text+" "+person[x];
+
+// }
+// document.getElementById("demo").innerHTML=text;
+
+function Person(first, last, age, eyeColor){
+  this.firstName=first;
+  this.lastName=last;
+  this.age=age;
+  this.eyecolor=eyecolor;
+}
+const xyz= new Person("rohit", "kale", 24, "black");
+document.getElementById("demo").innerText = xyz.age;
+</script>
+
+
+</body>
+</html>
